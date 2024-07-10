@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/primary_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/primary_color"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivArtista"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/punto"
+            app:layout_constrainedHeight="true" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="2.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNombreArtista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artista"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/tVLugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lugar"
+                android:textColor="@color/secondary_text" />
+
+            <TextView
+                android:id="@+id/tvCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ciudad"
+                android:textColor="@color/secondary_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
